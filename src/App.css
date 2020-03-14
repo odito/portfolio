@@ -440,7 +440,7 @@ overflow: hidden;
 .items .projectBtn{
   font-size: 18px;
   padding:5px 10px;
-  width: 150px;
+  width: 180px;
   padding:5px 10px;
   color: #fff;
   cursor: pointer;
@@ -448,6 +448,14 @@ overflow: hidden;
   transition: all 0.5s ease-in-out;
   background:transparent;
 }
+
+.items .projectBtn a{
+ color: #fff;
+}
+
+.items .projectBtn a:hover{
+  color: #323232;
+ }
 
 .items{
   position: absolute;

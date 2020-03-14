@@ -15,11 +15,11 @@ export default function Projects() {
                     return(
                         <div className="single-project" key={item.id}>
                             
-                        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer"><img src={item.img} alt=""/></a>
+                        <a href={item.extlink} target="_blank" rel="noopener noreferrer"><img src={item.img} alt=""/></a>
                            <p>{item.title}</p>
                             <div className="items">
                                
-                            <button className="projectBtn">{item.btnTitle}</button>
+                            <button className="projectBtn"><a href={item.extlink} target="_blank">{item.btnTitle}</a></button>
                             </div>
                     </div>
                     )
