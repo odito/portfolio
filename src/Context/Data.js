@@ -179,8 +179,8 @@ export const courses=[
     },
     {   
         id:2,
-        iframe:"https://www.youtube.com/embed/iudR_4MBRyU",
-        title:'Lti website',
+        iframe:"https://www.youtube.com/embed/vJ0AVaO31xE",
+        title:'Autosafe website',
     },
     {   
         id:3,
