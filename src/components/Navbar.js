@@ -46,8 +46,8 @@ export default function Navbar() {
                 
                  {links.map(links=>{
                     return(
-                    <li  onClick={()=>scrollToElement(links.scrolling)
-                } key={links.id}><Link to='/' >{links.link}</Link></li>
+                    <li  key={links.id}><Link to='/'   onClick={()=>scrollToElement(links.scrolling)
+                    }>{links.link}</Link></li>
                     )
                 })} 
 

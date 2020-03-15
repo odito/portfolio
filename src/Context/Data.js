@@ -146,7 +146,7 @@ export const projects=[
     },
     {
         id:4,
-        extlink:'',
+        extlink:'https://autosafe.netlify.com/',
         img:"/photos/safe-banner.jpg",
         title:'Html, css, javascript project',
         btnTitle:"Autosafe",
@@ -170,7 +170,7 @@ export const projects=[
 
 
 
-// projects
+// courses
 export const courses=[
     {
         id:1,
