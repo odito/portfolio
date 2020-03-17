@@ -49,9 +49,9 @@ position: relative;
 
 .texts{
   position: absolute;
-  top:30%;
+  top:25%;
   right:1rem;
- 
+  
   text-align: center;
   color:rgb(175, 174, 174);
   text-shadow: 1px 1px rgb(39, 39, 39);
@@ -60,27 +60,56 @@ position: relative;
 .texts h2{
  font-style: italic;
  color:rgb(207, 205, 205);
-
+ text-align: left;
+font-size: 20px;
 }
+
+.texts h1{
+
+  font-size: 22px;
+  font-style: italic;
+  color:rgb(207, 205, 205);
+  text-align: left;
+ 
+ }
 
 .contactBtn{
   padding:5px 10px;
   margin:20px;
   font-size:18px;
-  color:#323232;
+  color:#fff;
   text-shadow: none;
-  border: 1px solid transparent;
+  border: 1px solid #fff;
   transition: all 0.5s ease-in-out;
   width: 90px;
-  background:rgb(214, 213, 213);
+  /* background:rgb(214, 213, 213); */
+  background:transparent;
   display:inline-block;
 }
 
 .contactBtn:hover{
-  background:dodgerblue;
+  background:dodgerblue !important;
   color: #fff;
   border:1px solid #fff;
 }
+
+@media screen and (min-width:350px){
+  .header img{
+    width: 100%;
+    height: 40vh;
+  }
+  
+  .contactBtn{
+    padding:5px 10px;
+    margin:50px;
+   
+  
+  }
+
+}
+
+
+
 
 @media screen and (min-width:664px){
   .header img{
@@ -88,7 +117,9 @@ position: relative;
     height: 75vh;
   }
 
-  
+  .texts{
+    top:35%;
+  }
 .texts h1{
   font-size: 35px;
 
@@ -96,6 +127,7 @@ position: relative;
 
 .texts h2{
  font-style: italic;
+ font-size: 25px;
  color:rgb(207, 205, 205);
 
 }
@@ -109,6 +141,7 @@ width: 120px;
 }
 }
 
+/*end of header */
 
 /* about */
 .about{
@@ -192,11 +225,19 @@ width: 120px;
 
 
 
+
+
+
+
 @media screen and (min-width:664px){
   .about-center{
     display: flex;
     justify-content: center;
    
+  }
+
+  .header img{
+   height: 75vh;
   }
 
   .about-logo{
@@ -718,7 +759,7 @@ overflow: hidden;
   @media only screen and (min-width:360px){
     .single-course iframe{
       width: 100%;
-      height:25vh;
+      height:30vh;
       display: block;
     }
   }

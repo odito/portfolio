@@ -12,7 +12,7 @@ export default function Header() {
                  <h1>Hello, i am Odysseas.</h1>
                 </Bounce>
                 <Bounce left cascade delay={2000} duration={2000} >
-                <h2>Elecrician enginner,
+                <h2>Electrician enginner,
                 Web developer</h2>
                </Bounce>
                 <Bounce bottom delay={4000} duration={3000} >
