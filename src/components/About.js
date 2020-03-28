@@ -29,7 +29,9 @@ export default function About() {
                    <p><span>Address:</span> Ant,kiousi 47 Koropi (Athens), Greece</p> 
                  </div>
                  <div className="email">
-                   <p><span>Email:</span> Kolas odysseas</p> 
+                   <p><span>Email:</span> <a href="mailto:odkolas@gmail.com" 
+                   style={{backgroundColor:"dogerblue"}}
+                   >odkolas@gmail.com</a></p> 
                  </div> 
                  <div className="phone">
                    <p><span>Phone:</span> +(30) 698 6823910</p> 

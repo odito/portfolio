@@ -77,8 +77,8 @@ export const devSkills=[
     {
         id:5,
         title:"BOOTSTRAP",
-       percent:'seventy',
-       number:'70%'
+       percent:'fifty',
+       number:'50%'
     },
     {
         id:6,
