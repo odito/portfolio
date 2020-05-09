@@ -4,18 +4,81 @@
   padding:0;
 }
 
-/* body{
-  background:rgb(238, 235, 235);
-} */
+
+/*--------- dark-light mode-------- */
+/* light mode class */
+.App{
+  background:#f3f1f1 !important;
+  transition: all 0.3s  ease-in-out;
+}
+
+
+/* end of light mode class */
+
+/* dark mode class */
+.dark-nav{
+  background: rgb(43, 42, 42) !important;
+}
+
+.dark-mode-black{
+  background:#424242 !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.dark-mode-orange{
+  color: rgb(218, 175, 97) !important;
+  font-style: italic;
+}
+.dark-mode-orangeBack{
+  background:rgb(99, 98, 98) !important;
+}
+
+.dark-mode-white{
+  color: #fff;
+  
+}
+
+.dark-mode-lightWhite{
+  color: rgb(224, 221, 221);
+  line-height: 1.6;
+  margin-top: 10px;
+  
+}
+
+.dark-mode-mail{
+  color:rgb(30, 127, 218);
+}
+
+.newBar{
+  border:1px solid grey !important;
+}
+
+.newBorder{
+  border:1px solid grey;
+}
+
+.dark-mode-blue{
+  background: rgb(2, 38, 80) !important;
+}
+/* end of dark mode class */
+/*--------- dark-light mode-------- */
+
+
 
 
 li{
   list-style: none;
 }
 
+
+
+
+
 a{
   text-decoration: none;
 }
+
+
 
 /* header */
 .header{
@@ -110,6 +173,74 @@ font-size: 20px;
 
 
 
+/* dark mode btnMode */
+.btnMode{
+
+
+  position: absolute;
+  right: 10px;
+  top:10px;
+    display: flex;
+    width: 4rem;
+    position: fixed;
+    top:90px
+    
+    }
+    
+    .btnIcons{
+      background: rgb(4, 67, 131);
+      border:1px solid transparent;
+      width: 5rem;
+      height: 6px;
+      padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+    position: relative;
+    border-radius: 3rem;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    }
+    
+    .newBtnIcons{
+      background: #363636;
+     
+    }
+    
+     .fa-moon{
+       color:#e6e4e4;
+     }
+    
+     .fa-sun{
+      color:orange;
+    }
+    
+    .ball{
+      position: absolute;
+      left:0;
+      width:2rem;
+      margin:0 auto;
+      height: 20px;
+      background: rgb(192, 184, 149);
+      border-radius: 3rem;
+      transition: all 0.3s ease-in-out;
+      
+      
+    }
+    
+    .newBall{
+      position: absolute;
+    
+      left:50%;
+     
+    }
+    
+  
+  /* end of dark mode btnMode */
+
+
+
 
 @media screen and (min-width:664px){
   .header img{
@@ -178,9 +309,13 @@ width: 120px;
   
 }
 
+
+
 .profile h2{
   letter-spacing:0.2rem ;
+ 
 }
+
 
 .about-media a{
   flex-grow: 1;
@@ -458,6 +593,8 @@ width: 120px;
  margin-top: 20px;
  background:rgba(0,0,0,0.9);
 overflow: hidden;
+
+
 }
 .single-project a{
   width: 100%;
@@ -727,7 +864,7 @@ overflow: hidden;
     width:100%;
     height:100%;
     margin-bottom: 30px;
-
+    background: lightgray;
    
     box-shadow: 0 0 4px 1px grey;
   }

@@ -22,10 +22,11 @@ export default function Contact() {
 return (
 <ProductConsumer>
     {value=>{
+         const {setClass}=value;
         return(
             <React.Fragment>
-            <Title title="contact" color="grey" />
-   <div className="contact">
+            <Title title="contact" color={setClass?'#fefefe':'grey'} />
+   <div className={setClass?"dark-mode-blue contact":"contact"}>
        <div className="container">
           
        <div className="contact-center">
@@ -67,9 +68,9 @@ return (
       </div>
     
    </div>
-   <div className="created">
+   <div className={setClass?"dark-mode-blue created":"created"}>
        <div className="container">
-   <p>Designed and created by Codito {year()>2020?" 2020":''} - {year()}</p>
+   <p>Designed and created by Codito {year()>2020?" 2020 - ":''}  {year()}</p>
        </div>
    </div>
    </React.Fragment>  

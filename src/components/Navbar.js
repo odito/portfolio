@@ -27,7 +27,7 @@ export default function Navbar() {
                     const {sidebarOpen, handleSidebar,handleClose,links,headerShow}=value;
                      
                   return(
-                    <NavWrapper  show={sidebarOpen}  posit={headerShow}>
+                    <NavWrapper className={value.setClass?'dark-nav':''}  show={sidebarOpen}  posit={headerShow}  >
               
 
                     <div className="header-container">

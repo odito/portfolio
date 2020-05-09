@@ -9,11 +9,16 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Courses from './components/Courses';
 import {Route} from 'react-router-dom';
+import {ProductConsumer} from './Context/context';
 
 
 function App() {
   return (
-    <div className="App">
+  <ProductConsumer>
+    {value=>{
+      const {setClass}=value;
+      return(
+        <div className={setClass?'dark-mode-black':'App'}>
    
         <Navbar />
   
@@ -38,11 +43,14 @@ function App() {
   </Element>
 
   <Element name="Contact">
-    <Route exact path="/" component={Contact} />
+    <Route exact path="/" component={Contact}  />
   </Element>
 
        
     </div>
+      )
+    }}
+  </ProductConsumer>
   );
 }
 

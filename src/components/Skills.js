@@ -9,43 +9,31 @@ export default function Skills() {
     return (
       <ProductConsumer>
           {value=>{
+              const {setClass} =value;
               return(
                 <div className="skills">
                 <div className="container">
-                    <Title title=" Skills" color="grey" />
+                    <Title title=" Skills" color={setClass?"white":"grey"} />
              <div className="skills-center">
                <div className="skills-web">
-                   <h4>web development skills :</h4>
+                   <h4 className={setClass?"dark-mode-orange":""}>web development skills :</h4>
                    {value.devSkills.map(item=>{
                        return(
-                           <li key={item.id}>
-                               <h3>{item.title}</h3><span className='bar'><span className={item.percent}><p>{item.number}</p></span></span>
+                           <li key={item.id}  className={setClass?"dark-mode-lightWhite":""}>
+                               <h3>{item.title}</h3><span className={setClass?"newBar bar":"bar"}><span className={item.percent}><p>{item.number}</p></span></span>
                            </li>
                        )
                    })}
-                 {/* <li>
-                     <h3>HTML5</h3><span className="bar"><span className="ninety"><p>90%</p></span></span> 
-                </li>
-                 <li>
-                     <h3>CSS3</h3><span className="bar"><span className="ninety"><p>90%</p></span></span> 
-                 </li>
-     
-                 <li>
-                     <h3>JAVASCRIPT</h3><span className="bar"><span className="eighty"><p>80%</p></span></span> 
-                 </li>
-     
-                 <li>
-                     <h3>REACT</h3><span className="bar"><span className="seventy"><p>70%</p></span></span> 
-                  </li> */}
+                
                  </div>
      
                  <div className="skills-electric" >
-                     <h4>Electrical skills:</h4>
+                     <h4 className={setClass?"dark-mode-orange":""}>Electrical skills:</h4>
 
                      {value.electricSkills.map(item=>{
                        return(
-                           <li key={item.id}>
-                               <h3>{item.title}</h3><span className='bar'><span className={item.percent}><p>{item.number}</p></span></span>
+                           <li key={item.id} className={setClass?"dark-mode-lightWhite":""}>
+                               <h3>{item.title}</h3><span className={setClass?"newBar bar":"bar"}><span className={item.percent}><p>{item.number}</p></span></span>
                            </li>
                        )
                    })}
