@@ -40,7 +40,7 @@
 
 .dark-mode-lightWhite{
   color: rgb(224, 221, 221);
-  line-height: 1.6;
+
   margin-top: 10px;
   
 }
@@ -58,7 +58,8 @@
 }
 
 .dark-mode-blue{
-  background: rgb(2, 38, 80) !important;
+  background:#232424 !important;
+  transition: all 0.3s ease-in-out;
 }
 /* end of dark mode class */
 /*--------- dark-light mode-------- */
@@ -151,7 +152,7 @@ font-size: 20px;
 }
 
 .contactBtn:hover{
-  background:dodgerblue !important;
+  background:rgb(10, 78, 146) !important;
   color: #fff;
   border:1px solid #fff;
 }
@@ -159,7 +160,7 @@ font-size: 20px;
 @media screen and (min-width:350px){
   .header img{
     width: 100%;
-    height: 40vh;
+    height: 45vh;
   }
   
   .contactBtn{
@@ -272,12 +273,27 @@ width: 120px;
 }
 }
 
+@media screen and (min-width:964px){
+  .header{
+    min-height: 90vh;
+  }
+  .header img{
+    width: 100%;
+    min-height: 85vh;
+  }
+
+ 
+}
+
 /*end of header */
 
 /* about */
 .about{
   padding:20px 10px;
+  line-height: 1.6;
 }
+
+
 
 .about-logo{
  width:100%;
@@ -330,7 +346,7 @@ width: 120px;
 .about-media a:hover{
  
   color:rgb(197, 194, 194);
-  background:dodgerblue;
+  background:rgb(10, 78, 146) !important;
   color: #fff;
   border:1px solid #fff;
 }
@@ -432,7 +448,7 @@ width: 120px;
 
 .skills h3{
   font-weight: 500;
- 
+  padding-top: 3px;
  
 }
 .skills-center li .bar{
@@ -444,33 +460,34 @@ width: 120px;
 
 .bar span{
   background:green;
- 
   display: block;
  
 }
 .bar .ninety{
   width:90%;
-  animation: ninety 2s;
+  animation: ninety 5s;
+  
+ 
 }
 
 .bar .eighty{
   width:80%;
-  animation: eighty 2s;
+  animation: eighty 5s;
 }
 
 .bar .seventy{
   width:70%;
-  animation: seventy 2s;
+  animation: seventy 5s ;
 }
 
 .bar .sixty{
   width:60%;
-  animation: seventy 2s;
+  animation: seventy 5s;
 }
 
 .bar .fifty{
   width:50%;
-  animation: seventy 2s;
+  animation: seventy 5s ;
 }
 
 .bar .thirty{
@@ -646,9 +663,10 @@ overflow: hidden;
 
 .items .projectBtn a{
  color: #fff;
+ transition: all 0.5s ease-in-out;
 }
 
-.items .projectBtn a:hover{
+.items .projectBtn:hover a{
   color: #323232;
  }
 
@@ -664,12 +682,18 @@ overflow: hidden;
   text-align: center;
   
 }
- .items .projectBtn:hover{
-  color:#323232;
+
+
+
+ .items .projectBtn:hover {
+  color:#323232 ;
   background:rgb(214, 216, 218);
   border:1px solid #fff;
   opacity:0.7;
+  
 }
+
+
 
 .single-project:hover .items{
   bottom: 0;

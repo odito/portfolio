@@ -32,7 +32,7 @@ return (
        <div className="contact-center">
             
          <div className="contact-links">
-             <h3>Links</h3>
+             <h3 className={setClass?'dark-mode-orange':''}>Links</h3>
              <div className="links-items">
              {value.links.map(links=>{
                  return(
@@ -54,7 +54,7 @@ return (
              </div>
          </div>
          <div className="contact-media">
-             <h3>Media</h3>
+             <h3 className={setClass?'dark-mode-orange':''}>Media</h3>
              <div className="media-items">
              <li><a href="https://www.youtube.com/channel/UCarYD6WjjdXRqBZhPF9ppHQ/videos?view_as=subscriber" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube-square"></i> Youtube</a></li>
              <li><a href="https://www.linkedin.com/in/odysseas-kolas-275582113/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i> Linkedin</a></li>
