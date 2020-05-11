@@ -21,11 +21,12 @@ function App() {
         <div className={setClass?'dark-mode-black':'App'}>
    
         <Navbar />
-  
+ 
+ 
   <Element name="Home">
     <Route exact path="/" component={Header} />
   </Element>
-
+  <div className="basic">
   <Element name="About">
     <Route exact path="/" component={About} />
   </Element>
@@ -41,6 +42,9 @@ function App() {
   <Element name="Courses">
     <Route exact path="/" component={Courses} />
   </Element>
+    
+
+  </div>
 
   <Element name="Contact">
     <Route exact path="/" component={Contact}  />

@@ -39,10 +39,10 @@ export default function About() {
                    >odkolas@gmail.com</a></p> 
                  </div> 
                  <div className="phone">
-                   <p><span className={setClass ?"dark-mode-orange":""}>Phone:</span> +(30) 698 6823910</p> 
+                   <p><span className={setClass ?"dark-mode-orange":""}>Phone:</span> +(30) 698 6523910</p> 
                  </div> 
                  <div className="website">
-                   <p><span className={setClass ?"dark-mode-orange":""}>Website:</span> www.codito.com</p> 
+                   <p><span className={setClass ?"dark-mode-orange":""}>Website:</span> www.codito.com(under construction)</p> 
                  </div>
                  <div className={setClass ?"about-media dark-mode-orangeBack":"about-media"}>
                  <a href="https://www.youtube.com/channel/UCarYD6WjjdXRqBZhPF9ppHQ/videos?view_as=subscriber" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube-square"></i>
