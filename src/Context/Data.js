@@ -153,10 +153,10 @@ export const projects=[
     },
     {
         id:5,
-        extlink:'',
-        img:"/photos/project1.jpg",
+        extlink:'https://boukouvalas.netlify.app/',
+        img:"/photos/bouk-banner.jpg",
         title:'react',
-        btnTitle:"project",
+        btnTitle:"Bouk electrical",
     },
     {
         id:6,
@@ -184,8 +184,8 @@ export const courses=[
     },
     {   
         id:3,
-        iframe:"https://www.youtube.com/embed/iudR_4MBRyU",
-        title:'Lti website',
+        iframe:"https://www.youtube.com/embed/o3eR0X91Ogs",
+        title:'React contact form',
     },
     {
         id:4,

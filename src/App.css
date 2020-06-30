@@ -191,7 +191,8 @@ font-size: 20px;
     display: flex;
     width: 4rem;
     position: fixed;
-    top:90px
+    top:90px;
+    z-index: 5;
     
     }
     
@@ -472,7 +473,10 @@ width: 120px;
 }
 .bar .ninety{
   width:90%;
-  animation: ninety 5s;
+  animation: ninety 5s infinite ;
+  
+
+
   
  
 }
