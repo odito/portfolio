@@ -127,6 +127,7 @@ export const projects=[
         img:"/photos/portfolio-banner.jpg",
         title:'React.js project',
         btnTitle:"Portfolio",
+        cat:'React'
         
 
     },
@@ -136,6 +137,7 @@ export const projects=[
         img:"/photos/lti-banner.jpg",
         title:'React.js project',
         btnTitle:"Lti",
+        cat:'React'
     },
     {   
         id:3,
@@ -143,6 +145,7 @@ export const projects=[
         img:"/photos/ok-banner.jpg",
         title:'Html, css, javascript project',
         btnTitle:"okElectric",
+        cat:'Html-Css'
     },
     {
         id:4,
@@ -150,6 +153,7 @@ export const projects=[
         img:"/photos/safe-banner.jpg",
         title:'Html, css, javascript project',
         btnTitle:"Autosafe",
+        cat:'Html-Css'
     },
     {
         id:5,
@@ -157,6 +161,7 @@ export const projects=[
         img:"/photos/bouk-banner.jpg",
         title:'react',
         btnTitle:"Bouk electrical",
+        cat:'React'
     },
     {
         id:6,
@@ -164,6 +169,7 @@ export const projects=[
         img:"/photos/project1.jpg",
         title:'react',
         btnTitle:"project",
+        cat:'React'
     },
   
 ]

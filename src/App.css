@@ -614,6 +614,42 @@ width: 120px;
   padding:20px 10px;
 }
 
+/* btns-filter */
+.btns-filter{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+
+}
+
+.single-btn{
+ margin:10px 0;
+}
+
+.single-btn button{
+  padding: 5px 10px;
+  color:rgb(80, 79, 79);
+  margin:0 10px;
+  background: #ccc;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid gray;
+  font-size: 16px;
+  font-style: italic;
+  transition: all 0.5s ease-in-out;
+}
+
+
+
+.single-btn button:hover{
+  background: gray !important;
+  color: #fefefe;
+  border: 1px solid rgb(83, 83, 83);
+ 
+ }
+
+/* end of btns filter */
+
 .single-project{
  width:100%;
  position: relative;
@@ -711,6 +747,14 @@ overflow: hidden;
 }
 
 @media screen and (min-width:664px){
+
+  .single-btn button{
+  
+    font-size: 18px;
+  
+  }
+
+
   .projects-center{
     display: flex;
     flex-wrap: wrap;

@@ -21,7 +21,8 @@ const ProductContext = React.createContext();
        courses:courses,
        backMode:false,
        setClass: JSON.parse(localStorage.getItem("Mode")),
-
+       filterProjects:projects,
+       projectsBtnNames:['All','React','Html-Css'],
    }
 
 
@@ -95,6 +96,26 @@ darkMode= () => {
 
 
 
+  // filtering projects with buttons
+projectsBtns=(e)=>{
+  console.log(e.target.value);
+  
+  let filterProjects=[];
+
+if(e.target.value === 'All'){
+   filterProjects=this.state.projects;
+}
+else{
+  filterProjects=this.state.projects.filter(item=>item.cat===e.target.value);
+}
+
+this.setState({
+  filterProjects:filterProjects
+})
+
+}
+
+
 
     render(){
         return(
@@ -105,6 +126,8 @@ darkMode= () => {
             scrollEffect:this.scrollEffect,
             handleMode:this.handleMode,
             darkMode:this.darkMode,
+            projectsBtns:this.projectsBtns,
+
         }}>
            {this.props.children}
         </ProductContext.Provider>
