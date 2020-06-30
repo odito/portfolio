@@ -19,7 +19,16 @@ export default function About() {
                <div className={setClass ?"about-texts dark-mode-white":"about-texts"}>
 
                <div className={setClass ?"dark-mode-orange":"profile"}>
-                   <h2>My profile</h2>
+                   <h2>My profile, <span style={{fontSize:'18px'}}>
+                     Gr:
+                     <a href="https://drive.google.com/file/d/1xyacaYBQRZGeMvPyjwa8cp-WWHeAD-Wd/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{color:'dodgerBlue'}}><i class="fa fa-download" aria-hidden="true" style={{padding:'5px'}}> </i>
+                  </a>
+                  En:
+                  <a href="https://drive.google.com/file/d/18MHnzZHQlzykCZs8V0D3MFcukPU4W23u/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{color:'dodgerBlue'}}><i class="fa fa-download" aria-hidden="true" style={{padding:'5px'}}> </i>
+                  </a>
+                  
+                  </span> </h2>
+                   
                  </div>
                    
                   <div className="name">
